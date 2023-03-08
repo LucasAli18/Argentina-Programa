@@ -1,0 +1,102 @@
+//Este es mi curriculum
+.curriculum{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+    .contenedor_seccion{
+        max-width: 1100px;
+        margin: auto;
+    }
+    h2{
+        @include sizeh2;
+    }
+    .fila{
+        display: flex;
+        justify-content: space-between;
+            .col{
+            width: 49%;
+            padding: 0 20px;
+            h3{
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+        }
+        .izquierda{
+            border-right: 2px solid #252a2e;
+        }
+        .derecha{
+            border-left: 2px solid #252a2e;
+        }
+        .item{
+            padding: 25px;
+            margin-bottom: 30px;
+            background-color: #252a2e;
+            position: relative;
+            h4{
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .casa{
+            color:#1cb698;
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+            }
+            .fecha{
+                display: block;
+                color: #1cb698;
+                margin-bottom: 10px;
+            }
+            p{
+                line-height: 24px;
+                
+            }
+            .conectori{
+                height: 2px;
+                background-color: #1cb698;
+                width: 47px;
+                top: 50%;
+                position: absolute;
+                right: -47px;
+                z-index: 5;
+                .circuloi{
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: #1cb698;
+                    float: right;
+                    position: relative;
+                    bottom: 4px;
+                }
+            }
+            .conectord{
+                height: 2px;
+                background-color: #1cb698;
+                width: 47px;
+                top: 57%;
+                position: absolute;
+                left: -47px;
+                z-index: 5;
+                .circulod{
+                    display: block;
+                    height: 10px;
+                    width: 10px;
+                    border-radius: 50%;
+                    background-color: #1cb698;
+                    float: left;
+                    position: relative;
+                    bottom: 4px;
+                }
+            }
+        }
+        .izq{
+            border-right: 2px solid #1cb698;
+            margin-right: 20px;
+        }
+        .der{
+            border-left: 2px solid #1cb698;
+            margin-left: 20px;
+        }
+    }
+}

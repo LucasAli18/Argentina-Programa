@@ -1,0 +1,114 @@
+// SECCION SKILLS
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+    .contenedor_seccion{
+        max-width: 1100px;
+        margin: auto;
+    h2{
+        @include sizeh2;
+    }
+    }
+    .fila{
+        display: flex;
+        .fila_col{
+            width: 50%;
+            padding: 0 20px;
+            h3{
+                font-size: 28px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    & .skill{
+        & span{
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .barra-skill{
+            height: 8px;
+            width: 80%;
+            background-color: #131517;
+            position: relative;
+            margin-bottom: 30px;
+            & span{
+                position: absolute;
+                height: 40px;
+                width: 40px;
+                background: #1cb698;
+                line-height: 40px;
+                border-radius: 50px;
+                text-align: center;
+                top: -17px;
+                right: -15px;
+                font-size: 14px;
+            }
+        }
+        .progreso{
+            background-color: #1cb698;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 8px;
+        }
+        //ESTAS CLASES SE AGREGARAN DINAMICAMENTE CON JAVASCRIPT
+        .javascript{
+            width: 0%;
+            animation: 2s javascript forwards;
+            @keyframes javascript{
+                0%{width: 0%;}
+                100%{width: 75%;}
+            }
+        }
+        .htmlcss{
+            width: 0%;
+            animation: 2s htmlcss forwards;
+            @keyframes htmlcss{
+                0%{width: 0%;}
+                100%{width: 89%;}
+            }
+        }
+        .comunicacion{
+            width: 0%;
+            animation: 2s comunicacion forwards;
+            @keyframes comunicacion{
+                0%{width: 0%;}
+                100%{width: 80%;}
+            }
+        }
+        .trabajo{
+            width: 0%;
+            animation: 2s trabajo forwards;
+            @keyframes trabajo{
+                0%{width: 0%;}
+                100%{width: 80%;}
+            }
+        }
+        .creatividad{
+            width: 0%;
+            animation: 2s creatividad forwards;
+            @keyframes creatividad{
+                0%{width: 0%;}
+                100%{width: 89%;}
+            }
+        }
+        .dedicacion{
+            width: 0%;
+            animation: 2s dedicacion forwards;
+            @keyframes dedicacion{
+                0%{width: 0%;}
+                100%{width: 85%;}
+            }
+        }
+        .proyect{
+            width: 0%;
+            animation: 2s proyect forwards;
+            @keyframes proyect{
+                0%{width: 0%;}
+                100%{width: 84%;}
+            }
+        }
+    }
+}
